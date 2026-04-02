@@ -33,7 +33,7 @@ public class TestZipcode {
 		String		path			=
 				TestZipcode.class.getResource("").getPath();
 		System.out.println(path);
-		String			inFile		=	path + "zipcode_20130201(1).csv";
+		String			inFile		=	path + "zipcode_utf8.csv";
 		FileReader		fr			=	new	FileReader (inFile);
 		BufferedReader	br			=	new BufferedReader(fr);
 
