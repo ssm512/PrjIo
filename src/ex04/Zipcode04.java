@@ -19,8 +19,8 @@ public class Zipcode04 {
 		String		[]			sidoList	=	new	String[sis.length];
 		int			[]			cnt			=	new int[sis.length];
 		for (int i = 0; i < sidoList.length; i++) { // sidoList에 sis[i].trim() 한걸 넣어줌
-			sis[i]			=	sis[i].trim();
-			sidoList[i]		=	sis[i];
+			//sis[i]			=	sis[i].trim();
+			sidoList[i]		=	sis[i].trim();
 			cnt[i]			=	0;
 		} 
 		
@@ -56,7 +56,7 @@ public class Zipcode04 {
 			//			울산		cnt[1]
 			//			경남		cnt[2]
 			for (int i = 0; i < sis.length; i++) {
-				if (sido.equals(sis[i])) {
+				if (sido.equals(sidoList[i])) {
 					cnt[i]++;
 				}
 			}
